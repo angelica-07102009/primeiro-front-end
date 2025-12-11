@@ -31,9 +31,9 @@ Este projeto tem a funcionalidade
 ## Como clonar
 
 No terminal do VS Code digite:
-    https://github.com/Sarah-ops53/Senac.git
+    https://github.com/angelica-07102009/Senac.git
 No GitHub Desktop
-    No menu: File(arquivi) > Clone a repositor (Clonar repositório) > Selecione a aba URL, cole o link do repositório https://github.com/Sarah-ops53/Senac.git
+    No menu: File(arquivi) > Clone a repositor (Clonar repositório) > Selecione a aba URL, cole o link do repositório https://github.com/angelica-07102009/Senac.git
 
 Resumindo:
     Clonar é baixar o repositório completo usando Git;
