@@ -1,6 +1,6 @@
 # Loja - Almas Literárias
  
-Este projeto tem a funcionalidade 
+Este projeto tem como objetivo facilitar a compra online de livros de forma segura, fácil e rápida. Ele conta com três categorias principais: Lançamentos, Destaques e Romances Leves e Aconchegantes, oferecendo uma variedade de títulos muito procurados pelos leitores.
 
 ![Imagem](./img/pagina.png)
 
