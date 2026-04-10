@@ -1,5 +1,7 @@
+/*MODO CLARO/////////////////////////////////////////////////////////////*/
+
 main {
-  background: #7caeae;
+  background: #d7bbec;
   color: #e4fbfb;
 }
 
@@ -21,6 +23,10 @@ body {
 img.logo {
   width: 100px;
   padding: 0;
+}
+
+.light img.logolight{
+  display: none;
 }
 
 .remove {
@@ -57,8 +63,8 @@ img {
   padding: 2rem;
 }
 
-#themeToggle {
-  border: 20px solid rgba(0, 0, 0, 0.08);
+#themeToggle img {
+  /* border: 20px solid rgba(0, 0, 0, 0.08); */
   background: transparent;
   padding: 0.5rem 0.75rem;
   border-radius: 100%;
@@ -103,7 +109,9 @@ section {
   justify-content: center;
   font-weight: 700;
   color: black;
-  padding: 0 12px 0 12px;
+  padding: 0;
+  max-width: 260px;
+
 }
 
 #livros {
@@ -347,10 +355,16 @@ header {
   z-index: 9;
 }
 
+/*MODOD ESCURO/////////////////////////////////////////////////////////*/
+
 .dark main {
-  background: #0b284a;
+  background: #010326;
   ;
   color: #d4b455;
+}
+
+.dark img.logodark{
+  display: none;
 }
 
 main {

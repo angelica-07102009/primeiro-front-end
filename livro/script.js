@@ -5,15 +5,19 @@ const root = document.documentElement;
 function enableDarkMode() {
   root.classList.add('dark');
   btn.setAttribute('aria-pressed', 'true');
-  btn.textContent = '🌞';
-  btn.setAttribute('aria-label', 'Desativar modo escuro');
+  const icon = document.getElementById('theme-icon');
+  icon.src = './imagens/Jerluciacordando.png';
+  // btn.textContent = '🌞';
+  // btn.setAttribute('aria-label', 'Desativar modo escuro');
 }
 
 function disableDarkMode() {
   root.classList.remove('dark');
   btn.setAttribute('aria-pressed', 'false');
-  btn.textContent = '🌜';
-  btn.setAttribute('aria-label', 'Ativar modo escuro');
+  const icon = document.getElementById('theme-icon');
+  icon.src = './imagens/Jerlucidormindo.png';
+  // btn.textContent = '🌜';
+  // btn.setAttribute('aria-label', 'Ativar modo escuro');
 }
 
 function initThemeFromSystem() {

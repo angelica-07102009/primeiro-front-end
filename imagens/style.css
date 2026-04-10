@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -214,10 +214,10 @@ button {
 
 .add-to-cart:hover {
   background: #070b3d;;
-}
+}*/
 
 /* Modal do carrinho */
-.cart-modal {
+/*.cart-modal {
   display: none;
   position: fixed;
   inset: 0;
@@ -367,4 +367,4 @@ main .produto p{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-}
+} */

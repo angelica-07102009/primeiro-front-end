@@ -1,11 +1,11 @@
-:root {
-  --bg: #7caeae;
+/* :root {
+  --bg: #d7bbec;
   --fg: #e4fbfb;
   --card: #f3f4f6;
 }
 
 :root.dark {
-  --bg: #0b284a;
+  --bg: #d7bbec;
   --fg: #d4b455;
   --card: #072257;
 }
@@ -199,10 +199,10 @@ button {
 
 .add-to-cart:hover {
   background: #ff4477;
-}
+}*/
 
 /* Modal do carrinho */
-.cart-modal {
+/*.cart-modal {
   display: none;
   position: fixed;
   inset: 0;
@@ -315,4 +315,4 @@ hr {
 
 .icones img {
   width: 50px;
-}
+} */

@@ -1,11 +1,11 @@
 :root {
-  --bg: #7caeae;
+  --bg: #d7bbec;
   --fg: #e4fbfb;
-  --card: #f3f4f6;
+  --card: #d7bbec;;
 }
 
 :root.dark {
-  --bg: #0b284a;
+  --bg: #010326;
   --fg: #d4b455;
   --card: #072257;
 }
@@ -45,21 +45,7 @@ button#themeToggle {
   background-color: transparent;
 }
 
-#themeToggle img {
-  /* border: 10px solid rgba(0, 0, 0, 0.03); */
-  background: transparent;
-  padding: 0.5rem 0.75rem;
-  border-radius: 100%;
-  cursor: pointer;
-  font-weight: 600;
-  /*position: fixed;
-  right: 10px;
-  bottom: 10px;
-  z-index: 99;*/
-  height: 150px;
-}
-
-#themeToggle img {
+ #themeToggle img {
   /* border: 10px solid rgba(0, 0, 0, 0.03); */
   background: transparent;
   padding: 0.5rem 0.75rem;
@@ -71,7 +57,8 @@ button#themeToggle {
   bottom: 10px;
   z-index: 99;
   height: 150px;
-}
+  width: 150px;
+} 
 
 :root.dark #themeToggle {
   border-color: rgba(255, 255, 255, 0.12);
@@ -85,8 +72,52 @@ header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+nav #navbarNav{
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0,0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+  height: 70px;
+  backdrop-filter: blur(05px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  justify-content: center;
+}
+
+.navbar-custom{
+  display: flex;
+  align-items: center;
+}
+
+
+.dark div#carouselLight{
+  display: none;
+}
+.light div#carouselDark{
+  display: none;
+}
+
+
+div#carouselLight .carousel-inner .carousel-item.align-items-center.justify-content-center img, 
+div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-content-center img {
+  height: 500px;
+}
+
 section {
   position: relative;
+}
+
+#banner {
+  margin-top: 70px;
+}
+
+.carousel-inner .card a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -106,7 +137,8 @@ section {
   justify-content: center;
   font-weight: 700;
   color: black;
-  padding: 0 12px 0 12px;
+  padding: 0;
+  max-width: 260px;
 }
 
 .card h5 {
@@ -125,20 +157,6 @@ h5,
 p {
   padding: 0 12px;
 }
-
-/* button {
-  display: inline-block;
-  padding: 12px 18px;
-  border-radius: 12px;
-  background: #08203A;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-} */
 
 .botao {
   display: flex;
@@ -437,6 +455,23 @@ header {
 .mobile{
   display: none;
 }
+
+a.logolight,  a.logodark{
+  z-index: 9;
+}
+
+.light a.logolight{
+  display: none;
+}
+.dark a.logodark{
+  display: none;
+}
+
+header .navbar a.logolight img,
+header .navbar a.logodark img{
+    width: 100px;
+  }
+
 @media screen and (max-width: 768px) {  
   .card img{
     width: 100%;
@@ -452,8 +487,9 @@ header {
     display: block;
   }
 
-  img.logo {
-    width: 70px;
+  header .navbar img.logo{
+    width: 90px;
+    height: auto;
   }
 
   #formulario {
