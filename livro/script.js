@@ -18,6 +18,7 @@ function disableDarkMode() {
   icon.src = './imagens/Jerlucidormindo.png';
   // btn.textContent = '🌜';
   // btn.setAttribute('aria-label', 'Ativar modo escuro');
+  //
 }
 
 function initThemeFromSystem() {
