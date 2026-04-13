@@ -12,11 +12,23 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark px-3">
-            <img class="logo" src="./imagens/alma.png" alt="logo do site">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"> </span>
-            </button>
+        <nav class="navbar navbar-custom navbar-expand-lg navbar-dark px-3">
+            <a class="logolight" href="#">
+                <img src="./imagens/logoescuro.png" alt="logo do site">
+            </a>
+            <a class="logodark" href="#">
+                <img src="./imagens/logoclaro.png" alt="logo do site">
+            </a>
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+                <div class=" container-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                </div>
+            </nav>
+
+
             <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#carouselFinancas"> Início </a></li>
@@ -32,7 +44,7 @@
             </div>
         </nav>
         <button id="themeToggle" aria-pressed="false" aria-label="Ativar modo escuro">
-            <img id="theme-icon" src="../imagens/Jerlucitchau.png" alt="Modo escuro">
+            <img id="theme-icon" src="./imagens/Jerlucitchau.png" alt="Modo escuro">
             <!-- Ativar modo escuro -->
         </button>
     </header>

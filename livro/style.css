@@ -20,9 +20,22 @@ body {
   flex-direction: column;
 }
 
-img.logo {
+a.logolight,
+a.logodark {
+  z-index: 9;
+}
+
+.light a.logolight {
+  display: none;
+}
+
+.dark a.logodark {
+  display: none;
+}
+
+header .navbar a.logolight img,
+header .navbar a.logodark img {
   width: 100px;
-  padding: 0;
 }
 
 .light img.logolight{
@@ -37,10 +50,6 @@ img.logo {
   font-size: 1rem;
 }
 
-img {
-  width: 30%;
-  padding: 40px;
-}
 
 .card-preco {
   display: flex;
@@ -111,7 +120,7 @@ section {
   color: black;
   padding: 0;
   max-width: 260px;
-
+  
 }
 
 #livros {
@@ -367,6 +376,7 @@ header {
   display: none;
 }
 
+/*Página interna/////////////////////////////////////////////////////////////////////////////////*/
 main {
   position: relative;
 }
@@ -377,6 +387,15 @@ main .produto {
   flex-wrap: wrap;
   margin: 50px auto;
   justify-content: space-between;
+}
+
+.produto img {
+  padding: 80px;
+  width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 900px;
+    border-radius: 100px;
 }
 
 main .produto .descricao {
@@ -394,6 +413,9 @@ main .produto p {
   align-items: flex-start;
   flex-direction: column;
 }
+
+
+/*Mobile/////////////////////////////////////////////////*/
 
 @media screen and (max-width: 768px) {
 

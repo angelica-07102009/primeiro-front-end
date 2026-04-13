@@ -1,7 +1,8 @@
 :root {
   --bg: #d7bbec;
   --fg: #e4fbfb;
-  --card: #d7bbec;;
+  --card: #d7bbec;
+  ;
 }
 
 :root.dark {
@@ -45,7 +46,7 @@ button#themeToggle {
   background-color: transparent;
 }
 
- #themeToggle img {
+#themeToggle img {
   /* border: 10px solid rgba(0, 0, 0, 0.03); */
   background: transparent;
   padding: 0.5rem 0.75rem;
@@ -58,7 +59,7 @@ button#themeToggle {
   z-index: 99;
   height: 150px;
   width: 150px;
-} 
+}
 
 :root.dark #themeToggle {
   border-color: rgba(255, 255, 255, 0.12);
@@ -72,12 +73,12 @@ header {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav #navbarNav{
+nav #navbarNav {
   flex-direction: column;
   width: 100%;
   background-color: transparent;
   border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 10px 30px rgba(0, 0,0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s, border-color 0.3s;
   height: 70px;
   backdrop-filter: blur(05px);
@@ -85,23 +86,25 @@ nav #navbarNav{
   left: 0;
   top: 0;
   justify-content: center;
+  padding: 15px;
 }
 
-.navbar-custom{
+.navbar-custom {
   display: flex;
   align-items: center;
 }
 
 
-.dark div#carouselLight{
+.dark div#carouselLight {
   display: none;
 }
-.light div#carouselDark{
+
+.light div#carouselDark {
   display: none;
 }
 
 
-div#carouselLight .carousel-inner .carousel-item.align-items-center.justify-content-center img, 
+div#carouselLight .carousel-inner .carousel-item.align-items-center.justify-content-center img,
 div#carouselDark .carousel-inner .carousel-item.align-items-center.justify-content-center img {
   height: 500px;
 }
@@ -114,7 +117,7 @@ section {
   margin-top: 70px;
 }
 
-.carousel-inner .card a{
+.carousel-inner .card a {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -230,19 +233,27 @@ p {
 }
 
 .add-to-cart {
-  background: #46427e;
+  background: #11079c;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
+  transition: 0.3s;
+  margin-top: 10px;
+
 }
 
 .add-to-cart:hover {
-  background: #20217a;
+  background: #04066c;
+  transform: scale(1.1);
+
+}
+
+.add-to-cart:active {
+  background-color: #4b59f1;
+  transform: scale(0.95);
 }
 
 /* Modal do carrinho */
@@ -429,16 +440,26 @@ header {
 }
 
 #contato .formulario .btn {
-  height: 50px;
-  background-color: #46427e;
+  background: #11079c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  color: #ffffff;
-  font-weight: bold;
-  letter-spacing: 1px;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 #contato .formulario .btn:hover {
-  background-color: #070b3d;
+  transform: scale(1.1);
+ 
+}
+
+.formulario .btn:hover {
+  background: #04066c;
+  transform: scale(1.1);
+
 }
 
 #contato .img {
@@ -449,48 +470,58 @@ header {
 #contato .img img {
   width: 30px;
 }
-.desktop{
+
+.desktop,
+#banner {
   display: block;
 }
-.mobile{
+
+.mobile,
+#bannerMobile {
   display: none;
 }
 
-a.logolight,  a.logodark{
+a.logolight,
+a.logodark {
   z-index: 9;
 }
 
-.light a.logolight{
+.light a.logolight {
   display: none;
 }
-.dark a.logodark{
+
+.dark a.logodark {
   display: none;
 }
 
 header .navbar a.logolight img,
-header .navbar a.logodark img{
-    width: 100px;
-  }
+header .navbar a.logodark img {
+  width: 100px;
+}
 
-@media screen and (max-width: 768px) {  
-  .card img{
+@media screen and (max-width: 768px) {
+  .card img {
     width: 100%;
     height: 350px;
     object-fit: cover;
   }
-  
-  .desktop{
+
+  .desktop,
+  #banner {
     display: none;
   }
 
-  .mobile{
+  .mobile,
+  #bannerMobile {
     display: block;
   }
 
-  header .navbar img.logo{
-    width: 90px;
+  header .navbar a.logolight img,
+  header .navbar a.logodark img {
+    width: 70px;
     height: auto;
   }
+
 
   #formulario {
     width: 100%;
@@ -554,21 +585,24 @@ header .navbar a.logodark img{
     flex-direction: column;
     margin: 50px;
   }
+
   #contato .formulario {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 5px;
-}
-hr {
-  margin: 2px;
-  height: 3px;
-  background-color: #ffffff;
-}
-#contato .infos-contato ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  hr {
+    margin: 2px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  #contato .infos-contato ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

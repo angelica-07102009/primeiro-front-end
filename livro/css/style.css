@@ -1,4 +1,4 @@
-/* :root {
+:root {
   --bg: #d7bbec;
   --fg: #e4fbfb;
   --card: #f3f4f6;
@@ -199,7 +199,7 @@ button {
 
 .add-to-cart:hover {
   background: #ff4477;
-}*/
+}
 
 /* Modal do carrinho */
 /*.cart-modal {
@@ -315,4 +315,4 @@ hr {
 
 .icones img {
   width: 50px;
-} */
+
