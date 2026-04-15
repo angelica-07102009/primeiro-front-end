@@ -5,11 +5,11 @@ main {
   color: #e4fbfb;
 }
 
-* {
-  box-sizing: border-box;
+ * {
+ box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} 
 
 body {
   background: var(--bg);
@@ -131,9 +131,11 @@ section {
   gap: 20px;
 }
 
-h5,
-p {
+.sinopse{
+  display: flex;
   padding: 0 12px;
+  font-size: 20px;
+  width: 80%;
 }
 
 button {
@@ -386,7 +388,14 @@ main .produto {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 50px auto;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.infos-produto{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+  width: 60%;
 }
 
 .produto img {
@@ -413,6 +422,13 @@ main .produto p {
   align-items: flex-start;
   flex-direction: column;
 }
+
+.card-preco input{
+  width: 60px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
 
 
 /*Mobile/////////////////////////////////////////////////*/
