@@ -395,7 +395,7 @@ main .produto {
   display: flex;
   flex-direction: column;
   margin: 80px 0;
-  width: 60%;
+  width: 100%;
 }
 
 .produto img {
@@ -424,12 +424,24 @@ main .produto p {
 }
 
 .card-preco input{
-  width: 60px;
+  /* width: 60px; */
   padding: 5px;
   margin-bottom: 15px;
 }
 
+/* AVALIAÇÃO ///////////////////////////////////////////////*/
 
+.avaliacao span {
+  font-size: 40px;
+  cursor: pointer;
+  color: gray;
+   padding: 5px; 
+   margin-left: 25px;
+}
+
+.avaliacao span.ativo {
+  color: gold;
+}
 
 /*Mobile/////////////////////////////////////////////////*/
 
@@ -474,4 +486,16 @@ main .produto p {
     margin: 0;
   }
 
+
+  /*Página interna////////////////////////////////////////////////////*/
+
+  .produto img {
+    padding: 50px;
+    height: 100%;
+    border-radius: 60px;
+  }
+
+  .sinopse{
+  width: 100%;
+}
 }

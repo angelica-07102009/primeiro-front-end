@@ -22,6 +22,27 @@ function disableDarkMode() {
   // btn.setAttribute('aria-label', 'Ativar modo escuro');
 }
 
+// =================AVALIAÇÃO========================
+
+const estrelas = document.querySelectorAll(".avaliacao span");
+const nota = document.getElementById("nota");
+
+estrelas.forEach((estrela) => {
+  estrela.addEventListener("click", () => {
+    const valor = estrela.getAttribute("data-value");
+
+    // limpa tudo
+    estrelas.forEach(e => e.classList.remove("ativo"));
+
+    // pinta até a estrela clicada
+    for (let i = 0; i < valor; i++) {
+      estrelas[i].classList.add("ativo");
+    }
+
+    nota.textContent = "Nota: " + valor;
+  });
+});
+
 function initThemeFromSystem() {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     enableDarkMode();
